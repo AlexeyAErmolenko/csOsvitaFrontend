@@ -10,73 +10,82 @@
 
 <body>
     <header>
-        <nav>
-            <span>IMAJI Coffee.</span>
-            <a href="/Home/">Home</a> |
-            <a href="/Story/">Story</a> |
-            <a href="/Menu/">Menu</a> |
-            <a href="/Space/">Space</a> |
-            <a href="/Community/">Community</a> |
-            <a href="/News/">News</a>
-            <button>Cart (2)</button>
-            <button>Sign in</button>
+        <nav aria-label="main navigation">
+            <span class="navLogo">IMAJI Coffee.</span>
+            <ul class="navMenu">
+                <li><a href="/Home/">Home</a></li>
+                <li><a href="/Story/">Story</a></li>
+                <li><a href="/Menu/">Menu</a></li>
+                <li><a href="/Space/">Space</a></li>
+                <li><a href="/Community/">Community</a></li>
+                <li><a href="/News/">News</a></li>
+                <li><button aria-label="Cart, contains x items">Cart (<p>2</p>)</button></li>
+                <li><button>Sign in</button></li>
+            </ul>
         </nav>
     </header>
     <main>
-        <section class="LandingPageDesktopOurMenuTabs1"> // style="display: none;"
-            <section class="ourMenu">
+        <!-- style="display: none;" -->
+        <section class="LandingPageDesktopOurMenuTabs1">
+            <section class="heroPage">
                 <h1>Our Menu</h1>
                 <p>
                     IMAJI Coffee provides a variety of high quality coffee and drinks and flavors that are suitable for
-                    you
-                    to
-                    support and
-                    cheer up your day. We also provide coffee to accompany you at home along with the equipment.
+                    you to support and cheer up your day. We also provide coffee to accompany you at home along with the
+                    equipment.
                 </p>
-                <form>
-                    <label for="search">Search <span>Clear</span></label>
-                    <img src="./images/search.svg" alt="search" width="10" height="10">
+                <form class="heroForm">
+                    <label for="search">Search<button type="button"
+                            aria-label="clear search field">Clear</button></label>
+                    <img src="./images/search.svg" alt="search" aria-hidden="true" width="10" height="10">
                     <input type="text" id="search" name="search" placeholder="Enter keyword">
 
-                    <label for="price">Price <span>Clear</span></label>
+                    <label for="price">Price<button type="button" aria-label="clear price field">Clear</button></label>
                     <select id="price" name="price">
                         <option value="Under $10">Under $10</option>
                         <option value="Under $10">Under $10</option>
                         <option value="Under $10">Under $10</option>
                     </select>
 
-                    <label for="sortBy">Sort By <span>Clear</span></label>
+                    <label for="sortBy">Sort By<button type="button"
+                            aria-label="clear sortBy field">Clear</button></label>
                     <select id="sortBy" name="sortBy">
                         <option value="bestSelling">Best Selling</option>
                         <option value="bestSelling">Best Selling</option>
                         <option value="bestSelling">Best Selling</option>
                     </select>
                 </form>
-                <button>Load More</button>
+                <button class="heroButton">Load More</button>
             </section>
-            <section class="navListProducts">
-                <button autofocus>
-                    <h2>COFFEE AND BAVERAGE</h2>
-                </button>
-                <button>
-                    <h2>FOOD AND SNACK</h2>
-                </button>
-                <button>
-                    <h2>IMAJI COFFEE AT HOME</h2>
-                </button>
+            <section class="tabListProducts">
+                <div role="tablist" aria-label="Menu categories">
+                    <button class="tabListProductsButton" id="tab-coffee-beverage" role="tab" aria-selected="true"
+                        aria-controls="panel-coffee-beverage">
+                        COFFEE AND BAVERAGE
+                    </button>
+                    <button class="tabListProductsButton" id="tab-food-snack" role="tab" aria-selected="false"
+                        aria-controls="panel-food-snack" tabindex="-1">
+                        FOOD AND SNACK
+                    </button>
+                    <button class="tabListProductsButton" id="tab-at-home" role="tab" aria-selected="false"
+                        aria-controls="panel-at-home" tabindex="-1">
+                        IMAJI COFFEE AT HOME
+                    </button>
+                </div>
             </section>
-            <section class="listProducts">
+            <section class="listProducts" role="tabpanel" id="panel-coffee-beverage"
+                aria-labelledby="tab-coffee-beverage">
                 <ul>
                     <li>
                         <article class="productCard">
-                            <div>SALE</div>
-                            <img src="./images/ristrettoBianco.jpg" alt="A cup of coffee and two cookies" width="300"
-                                height="300">
-                            <div>
+                            <div class="saleBadge">sale</div>
+                            <img src="./images/ristrettoBianco.jpg" alt="Cup of Ristretto Bianco with two cookies"
+                                width="300" height="300">
+                            <div class="productCardName">
                                 <h3>Ristretto Bianco</h3>
                                 <p>Only at Cafe and Delivery</p>
                             </div>
-                            <div>
+                            <div class="pricePromo">
                                 <p>$5.00<span>$6.00</span></p>
                                 <p>Get 20% Off in App</p>
                             </div>
@@ -84,14 +93,14 @@
                     </li>
                     <li>
                         <article class="productCard">
-                            <div>SALE</div>
+                            <div class="saleBadge">sale</div>
                             <img src="./images/icedCreamyLatte.jpg" alt="Tall glass of layered iced latte" width="300"
                                 height="300">
-                            <div>
+                            <div class="productCardName">
                                 <h3>Iced Creamy Latte</h3>
                                 <p>Only at Cafe and Delivery</p>
                             </div>
-                            <div>
+                            <div class="pricePromo">
                                 <p>$5.00<span>$6.00</span></p>
                                 <p>Get 20% Off in App</p>
                             </div>
@@ -99,14 +108,14 @@
                     </li>
                     <li>
                         <article class="productCard">
-                            <div>SALE</div>
+                            <div class="saleBadge">sale</div>
                             <img src="./images/cappuccino.jpg" alt="Cup of cappuccino with foam art on a wood table"
                                 width="300" height="300">
-                            <div>
+                            <div class="productCardName">
                                 <h3>Cappuccino</h3>
                                 <p>Only at Cafe and Delivery</p>
                             </div>
-                            <div>
+                            <div class="pricePromo">
                                 <p>$5.00<span>$6.00</span></p>
                                 <p>Get 20% Off in App</p>
                             </div>
@@ -114,14 +123,14 @@
                     </li>
                     <li>
                         <article class="productCard">
-                            <div>SALE</div>
+                            <div class="saleBadge">sale</div>
                             <img src="./images/icedLongBlack.jpg" alt="Tall glass of iced long black with a straw"
                                 width="300" height="300">
-                            <div>
+                            <div class="productCardName">
                                 <h3>Iced Long Black</h3>
                                 <p>Only at Cafe and Delivery</p>
                             </div>
-                            <div>
+                            <div class="pricePromo">
                                 <p>$5.00<span>$6.00</span></p>
                                 <p>Get 20% Off in App</p>
                             </div>
@@ -129,13 +138,13 @@
                     </li>
                     <li>
                         <article class="productCard">
-                            <div>SALE</div>
+                            <div class="saleBadge">sale</div>
                             <img src="./images/milkCoffeeRegal.jpg" alt="milk Coffee Regal" width="300" height="300">
-                            <div>
+                            <div class="productCardName">
                                 <h3>milk coffee regal</h3>
                                 <p>Only at Cafe and Delivery</p>
                             </div>
-                            <div>
+                            <div class="pricePromo">
                                 <p>$5.00<span>$6.00</span></p>
                                 <p>Get 20% Off in App</p>
                             </div>
@@ -143,13 +152,13 @@
                     </li>
                     <li>
                         <article class="productCard">
-                            <div>SALE</div>
+                            <div class="saleBadge">sale</div>
                             <img src="./images/orangeJuice.jpg" alt="Orange juice" width="300" height="300">
-                            <div>
+                            <div class="productCardName">
                                 <h3>Orange juice</h3>
                                 <p>Only at Cafe and Delivery</p>
                             </div>
-                            <div>
+                            <div class="pricePromo">
                                 <p>$5.00<span>$6.00</span></p>
                                 <p>Get 20% Off in App</p>
                             </div>
@@ -157,13 +166,13 @@
                     </li>
                     <li>
                         <article class="productCard">
-                            <div>SALE</div>
+                            <div class="saleBadge">sale</div>
                             <img src="./images/sodaBeverage.jpg" alt="Soda Beverage" width="300" height="300">
-                            <div>
+                            <div class="productCardName">
                                 <h3>Soda Beverage</h3>
                                 <p>Only at Cafe and Delivery</p>
                             </div>
-                            <div>
+                            <div class="pricePromo">
                                 <p>$5.00<span>$6.00</span></p>
                                 <p>Get 20% Off in App</p>
                             </div>
@@ -171,14 +180,14 @@
                     </li>
                     <li>
                         <article class="productCard">
-                            <div>SALE</div>
+                            <div class="saleBadge">sale</div>
                             <img src="./images/icedCoffeeWithMilk.jpg" alt="ICED Coffee with milk" width="300"
                                 height="300">
-                            <div>
+                            <div class="productCardName">
                                 <h3>ICED Coffee with milk</h3>
                                 <p>Only at Cafe and Delivery</p>
                             </div>
-                            <div>
+                            <div class="pricePromo">
                                 <p>$5.00<span>$6.00</span></p>
                                 <p>Get 20% Off in App</p>
                             </div>
@@ -187,11 +196,11 @@
                     <li>
                         <article class="productCard">
                             <img src="./images/icefAmericano.jpg" alt="ICED AMERICANO" width="300" height="300">
-                            <div>
+                            <div class="productCardName">
                                 <h3>ICED AMERICANO</h3>
                                 <p>Only at Cafe and Delivery</p>
                             </div>
-                            <div>
+                            <div class="price">
                                 <p>$5.00</p>
                             </div>
                         </article>
@@ -199,11 +208,11 @@
                     <li>
                         <article class="productCard">
                             <img src="./images/veganIcedLatte.jpg" alt="vegan iced latte" width="300" height="300">
-                            <div>
+                            <div class="productCardName">
                                 <h3>vegan iced latte</h3>
                                 <p>Only at Cafe and Delivery</p>
                             </div>
-                            <div>
+                            <div class="price">
                                 <p>$5.00</p>
                             </div>
                         </article>
@@ -211,11 +220,11 @@
                     <li>
                         <article class="productCard">
                             <img src="./images/icedChocholate.jpg" alt="ICED CHOCOLATE" width="300" height="300">
-                            <div>
+                            <div class="productCardName">
                                 <h3>ICED CHOCOLATE</h3>
                                 <p>Only at Cafe and Delivery</p>
                             </div>
-                            <div>
+                            <div class="price">
                                 <p>$5.00</p>
                             </div>
                         </article>
@@ -223,18 +232,27 @@
                     <li>
                         <article class="productCard">
                             <img src="./images/autumnalCoffee.jpg" alt="Autumnal coffee" width="300" height="300">
-                            <div>
+                            <div class="productCardName">
                                 <h3>Autumnal coffee</h3>
                                 <p>Only at Cafe and Delivery</p>
                             </div>
-                            <div>
+                            <div class="price">
                                 <p>$5.00</p>
                             </div>
                         </article>
                     </li>
                 </ul>
             </section>
-            <button>Load More</button>
+
+            <section class="listProducts" role="tabpanel" id="panel-food-snack" aria-labelledby="tab-food-snack" hidden>
+                <ul></ul>
+            </section>
+
+            <section class="listProducts" role="tabpanel" id="panel-at-home" aria-labelledby="tab-at-home" hidden>
+                <ul></ul>
+            </section>
+
+            <button class="bottomListProductsButton">Load More</button>
         </section>
         <section class="LandingPageDesktopMenuDetail">
             <section class="menuDetail">
@@ -258,13 +276,13 @@
                         alt="Black and green bag of IMAJI Coffee Classic single origin" width="468" height="707">
                 </div>
                 <div class="menuDetailRight">
-                    <div class="menuDetailRightBreadCrumb">
-                        <a href="">Home</a>
-                        <span>></span>
-                        <a href="">Menu</a>
-                        <span>></span>
-                        <a href="">Details</a>
-                    </div>
+                    <nav class="menuDetailRightBreadCrumb" aria-label="bread crumb">
+                        <a href="/">Home</a>
+                        <span aria-hidden="true">></span>
+                        <a href="/menu">Menu</a>
+                        <span aria-hidden="true">></span>
+                        <a href="/Details" style="color: 121212;">Details</a>
+                    </nav>
                     <div class="menuDetailRightName">
                         <h3>At Home - Classic</h3>
                         <div class="price+Promo">
@@ -288,9 +306,11 @@
                     </div>
                     <div class="menuDetailRightButtons">
                         <button>Add to Cart</button>
-                        <button>
+                        <button aria-label="Reduce quantity">
                             <img src="./images/icons/regular/minus.svg" alt="decrease symbol" width="24" />
-                            1
+                        </button>
+                        <p>1</p>
+                        <button aria-label="Increase quantity">
                             <img src="./images/icons/regular/plus.svg" alt="increase symbol" width="24" />
                         </button>
                     </div>
@@ -372,7 +392,7 @@
                 <p><b>We Are Open from</b> Sun - Mon 10 AM - 22 PM</p>
             </address>
             <div>
-                <div>
+                <nav aria-label="Social networks">
                     <a href="/spotify.com"><img src="./images/icons/spotify-min.png" alt="spotify" width="24"
                             height="24"></a>
                     <a href="/instagram.com"><img src="./images/icons/instagram-min.png" alt="instagram" width="24"
@@ -385,20 +405,23 @@
                             height="24"></a>
                     <a href="/telegram.com"><img src="./images/icons/telegram-min.png" alt="telegram" width="24"
                             height="24"></a>
-                </div>
-                <div>
+                </nav>
+                <nav aria-label="links to download applications">
                     <p>Delivery Order</p>
                     <a href="/appStore.com"><img src="./images/icons/app-store-min.png" alt="logo app store" width="134"
                             height="40"></a>
                     <a href="/googlePlay.com"><img src="./images/icons/google-play-min.png" alt="logo google play"
                             width="134" height="40"></a>
-                </div>
+                </nav>
             </div>
         </div>
         <div style="color: #a27b5c;">
             <p>© 2023 IMAJI COFFEE, All rights reserved</p>
-            <div><a href="/Terms/" style="color: #a27b5c;">Terms and Conditions</a><span>|</span><a href="/Policy/"
-                    style="color: #a27b5c;">Privacy Policy</a></div>
+            <div>
+                <a href="/Terms/" style="color: #a27b5c;">Terms and Conditions</a>
+                <span aria-hidden="true">|</span>
+                <a href="/Policy/" style="color: #a27b5c;">Privacy Policy</a>
+            </div>
         </div>
     </footer>
 </body>
