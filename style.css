@@ -21,6 +21,7 @@ p {
 
 body {
     margin: 0 auto;
+    background-color: #fff;
 }
 
 a {
@@ -47,7 +48,7 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 .visually_hidden {
@@ -68,9 +69,7 @@ img {
 header {
     padding: 32px 100px;
     background: #fff;
-    /* desktop */
     min-width: 1220px;
-    /* desktop */
 }
 
 header nav {
@@ -163,6 +162,7 @@ main {}
 }
 
 .heading {
+
     padding: 0px 124px;
 }
 
@@ -300,24 +300,33 @@ main .all_products {
 
 .list_products {
     padding: 0px 80px;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /* display: flex;
+    flex-wrap: wrap;*/
     gap: 48px 24px;
     justify-content: center;
 }
 
 .list_products .product_card {
-    width: calc((100% - 3 * 24px) / 4);
-    max-width: 300px;
+    /* width: calc((100% - 3 * 24px) / 4);
+    max-width: 300px; */
 }
 
 .product_card article {
     position: relative;
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column;    
+    justify-content: center; */
     gap: 16px;
-    justify-content: center;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
 }
+
+/* :has(.product_image) {
+    grid-template-columns: 300px 1 fr;
+} */
 
 .overlay {
     position: absolute;
@@ -609,6 +618,7 @@ footer {
     padding: 56px 20px;
     /* min-width: 390px; */
     text-align: center;
+
 }
 
 .footer_content {
