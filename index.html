@@ -14,44 +14,63 @@
 <body>
     <header>
         <nav aria-label="main navigation">
-            <span class="header_nav_logo">IMAJI Coffee.</span>
-            <ul class="header_nav_menu">
-                <li>
-                    <div><a class="header_nav_menu_item" href="/Home/">Home</a><img src="./images/line.png"
-                            alt="simple line" width="20" height="1"></div>
-                </li>
-                <li>
-                    <a class="header_nav_menu_item" href="/Story/">Story</a><img src="./images/line.png"
-                        alt="simple line" width="20" height="1">
-                </li>
-                <li>
-                    <a class="header_nav_menu_item" href="/Menu/">Menu</a><img src="./images/line.png" alt="simple line"
-                        width="20" height="1">
-                </li>
-                <li>
-                    <a class="header_nav_menu_item" href="/Space/">Space</a><img src="./images/line.png"
-                        alt="simple line" width="20" height="1">
-                </li>
-                <li>
-                    <a class="header_nav_menu_item" href="/Community/">Community</a><img src="./images/line.png"
-                        alt="simple line" width="20" height="1">
-                </li>
-                <li>
-                    <a class="header_nav_menu_item" href="/News/">News</a><img src="./images/line.png" alt="simple line"
-                        width="20" height="1">
-                </li>
-                <li>
-                    <button class="header_nav_menu_button_cart" aria-label="Cart, contains x items">
-                        Cart (<span>2</span>)
+            <p class=" header_nav_logo">IMAJI<span> Coffee.</span></p>
+            <div class="header_nav_menu_and_buttons">
+                <ul class="desktop header_nav_menu">
+                    <li>
+                        <div><a class="header_nav_menu_item" href="/Home/">Home</a><img src="./images/line.png"
+                                alt="simple line" width="20" height="1"></div>
+                    </li>
+                    <li>
+                        <a class="header_nav_menu_item" href="/Story/">Story</a><img src="./images/line.png"
+                            alt="simple line" width="20" height="1">
+                    </li>
+                    <li>
+                        <a class="header_nav_menu_item" href="/Menu/">Menu</a><img src="./images/line.png"
+                            alt="simple line" width="20" height="1">
+                    </li>
+                    <li>
+                        <a class="header_nav_menu_item" href="/Space/">Space</a><img src="./images/line.png"
+                            alt="simple line" width="20" height="1">
+                    </li>
+                    <li>
+                        <a class="header_nav_menu_item" href="/Community/">Community</a><img src="./images/line.png"
+                            alt="simple line" width="20" height="1">
+                    </li>
+                    <li>
+                        <a class="header_nav_menu_item" href="/News/">News</a><img src="./images/line.png"
+                            alt="simple line" width="20" height="1">
+                    </li>
+                </ul>
+                <div class="desktop">
+                    <button class="header_nav_menu_button_cart" aria-label="Cart, contains x items">Cart
+                        (<span>2</span>)</button>
+                    <button class="header_nav_menu_button_sign_in">Sign in</button>
+                </div>
+                <div class="mobile">
+                    <button class="header_nav_menu_mob_cart" aria-label="Cart, contains x items">
+                        <img class="" srcset="./images/icons/regular/shopping-basket.png "
+                            src="./images/icons/regular/shopping-basket.png" alt="Simple brown shopping basket icon"
+                            width="20" height="20" />
+                        <!-- <svg width="20" height="20">
+                            <use href="./images/icons/regular/shopping-basket.svg"></use>                        
+                        </svg> -->
                     </button>
-                </li>
-                <li><button class="header_nav_menu_button_sign_in">Sign in</button></li>
-            </ul>
+                    <button class="header_nav_menu_mob_menu" aria-label="Mobile menu">
+                        <img class="" srcset="./images/icons/regular/menu-right.png "
+                            src="./images/icons/regular/menu-right.png" alt="Right-aligned hamburger menu icon"
+                            width="20" height="20" />
+                        <!-- <svg class="" width="20" height="20">
+                            <use href="./images/icons/regular/menu-right.svg"></use>
+                        </svg> -->
+                    </button>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
-        <!-- visually_hidden , if need menu detail -->
-        <div class="landing_page_desktop_our_menu_tabs_1_2_3">
+        <!-- class="visually_hidden" , if need menu detail -->
+        <div class="visually_hidden landing_page_desktop_our_menu_tabs_1_2_3">
             <section class="heading">
                 <h1>Our Menu</h1>
                 <p>
@@ -93,25 +112,25 @@
                     </div>
                 </form>
             </section>
-            <section class="all_products">
-                <div class="tab_list_products">
-                    <div role="tablist" aria-label="Menu categories">
-                        <button class="tab_list_products_button" role="tab" aria-selected="false" tabindex="-1"
-                            id="tab-coffee-beverage" aria-controls="panel-coffee-beverage">
-                            COFFEE AND BAVERAGE
-                        </button>
-                        <button class="tab_list_products_button" role="tab" aria-selected="true" id="tab-food-snack"
-                            aria-controls="panel-food-snack">
-                            FOOD AND SNACK
-                        </button>
-                        <button class="tab_list_products_button" role="tab" aria-selected="false" tabindex="-1"
-                            id="tab-at-home" aria-controls="panel-at-home">
-                            IMAJI COFFEE AT HOME
-                        </button>
-                    </div>
+            <section class="tabs">
+                <div role="tablist" aria-label="Menu categories">
+                    <button class="tabs_button" role="tab" aria-selected="false" tabindex="-1" id="tab-coffee-beverage"
+                        aria-controls="panel-coffee-beverage">
+                        coffe and bavarage
+                    </button>
+                    <button class="tabs_button" role="tab" aria-selected="true" id="tab-food-snack"
+                        aria-controls="panel-food-snack">
+                        food and snack
+                    </button>
+                    <button class="tabs_button" role="tab" aria-selected="false" tabindex="-1" id="tab-at-home"
+                        aria-controls="panel-at-home">
+                        imaji coffee at home
+                    </button>
                 </div>
+            </section>
+            <section class="all_products">
                 <div role="tabpanel" id="panel-coffee-beverage" aria-labelledby="tab-coffee-beverage">
-                    <ul class="visually_hidden list_products">
+                    <ul class="list_products">
                         <li class="product_card">
                             <article>
                                 <div class="product_image">
@@ -411,8 +430,8 @@
                         </li>
                     </ul>
                 </div>
-                <div role="tabpanel" id="panel-food-snack" aria-labelledby="tab-food-snack">
-                    <ul class="visually_hidden list_products">
+                <div class="visually_hidden" role="tabpanel" id="panel-food-snack" aria-labelledby="tab-food-snack">
+                    <ul class="list_products">
                         <li class="product_card">
                             <article>
                                 <div class="product_image">
@@ -737,7 +756,7 @@
                         </li>
                     </ul>
                 </div>
-                <div role="tabpanel" id="panel-at-home" aria-labelledby="tab-at-home">
+                <div class="visually_hidden" role="tabpanel" id="panel-at-home" aria-labelledby="tab-at-home">
                     <ul class="list_products">
                         <li class="product_card">
                             <article>
@@ -1068,12 +1087,16 @@
 
             </section>
             <section class="buttons">
-                <button class="bottom_list_products_button">Load More</button>
+                <button class="bottom_list_products_button">load more</button>
             </section>
         </div>
         <!-- remove visually_hidden, if need menu detail -->
-        <section class="visually_hidden landing_page_desktop_menu_detail">
+        <section class=" landing_page_desktop_menu_detail">
             <section class="menu_detail">
+                <div class="menu_detail_main_image">
+                    <img src="./images/atHomeClassicBig.jpg"
+                        alt="Black and green bag of IMAJI Coffee Classic single origin" width="468">
+                </div>
                 <ul class="menu_detail_image_list">
                     <li><img src="./images/menuDetailImage1.jpg" alt="Black and green bag of IMAJI Coffee El. Azul"
                             width="157" height="164"></li>
@@ -1087,27 +1110,31 @@
                             alt="Close-up of a Chemex coffee maker with a filter and brewing coffee" width="157"
                             height="164"></li>
                 </ul>
-                <div class="menu_detail_main_image">
-                    <img src="./images/atHomeClassicBig.jpg"
-                        alt="Black and green bag of IMAJI Coffee Classic single origin" width="468">
-                </div>
                 <div class="menu_detail_right">
                     <nav class="menu_detail_right_bread_crumb" aria-label="bread crumb">
                         <a href="/">Home</a>
-                        <span aria-hidden="true">></span>
+                        <div>
+                            <img src="./images/icons/regular/angle-right-small.png"
+                                alt="Small black right-pointing chevron icon" width="6" height="10"
+                                aria-hidden="true" />
+                        </div>
                         <a href="/menu">Menu</a>
-                        <span aria-hidden="true">></span>
+                        <div>
+                            <img src="./images/icons/regular/angle-right-small.png"
+                                alt="Small black right-pointing chevron icon" width="6" height="10"
+                                aria-hidden="true" />
+                        </div>
                         <a href="/Details">Details</a>
                     </nav>
                     <div class="menu_detail_right_name">
                         <h3>At Home - Classic</h3>
-                    </div>
-                    <div class="price-promo">
-                        <div class="price">
-                            <p>$4.00</p>
-                            <p class="crossed_out">$5.00</p>
+                        <div class="price-promo">
+                            <div class="price">
+                                <p>$4.00</p>
+                                <p class="crossed_out">$5.00</p>
+                            </div>
+                            <p class="promo">Get 20% Off in App</p>
                         </div>
-                        <p class="promo">Get 20% Off in App</p>
                     </div>
                     <div class="menu_detail_right_desc">
                         <p class="title">Description:</p>
@@ -1252,7 +1279,7 @@
                 <p><span class="padding bold">Customer Service</span> +6282-2876-6862</p>
                 <p><span class="bold">We Are Open from</span> Sun - Mon 10 AM - 22 PM</p>
             </address>
-            <img class="line" src="./images/Line1192x1-min.png" alt="simple line" width="1192" height="1">
+            <div class="line"></div>
             <div class="social_media">
                 <nav aria-label="Social networks">
                     <a href="/spotify.com"><img src="./images/icons/spotify-min.png" alt="spotify" width="24"
@@ -1270,21 +1297,24 @@
                 </nav>
                 <nav aria-label="links to download applications">
                     <p>Delivery Order</p>
-                    <a href="/appStore.com"><img src="./images/icons/app-store-min.png" alt="logo app store" width="134"
-                            height="40"></a>
-                    <a href="/googlePlay.com"><img src="./images/icons/google-play-min.png" alt="logo google play"
-                            width="134" height="40"></a>
+                    <div class="links_download_applications">
+                        <a href="/appStore.com"><img src="./images/icons/app-store-min.png" alt="logo app store"
+                                width="134" height="40"></a>
+                        <a href="/googlePlay.com"><img src="./images/icons/google-play-min.png" alt="logo google play"
+                                width="134" height="40"></a>
+                    </div>
                 </nav>
             </div>
-        </div>
-        <div class="copy_right">
-            <p>© 2023 IMAJI COFFEE, All rights reserved</p>
-            <div>
-                <a href="/Terms/">Terms and Conditions</a>
-                <span aria-hidden="true">|</span>
-                <a href="/Policy/">Privacy Policy</a>
+            <div class="copy_right">
+                <p>© 2023 <span>imaji coffee</span>, All rights reserved</p>
+                <div class="term_and_conditions">
+                    <a href="/Terms/">Terms and Conditions</a>
+                    <span aria-hidden="true">|</span>
+                    <a href="/Policy/">Privacy Policy</a>
+                </div>
             </div>
         </div>
+
     </footer>
 </body>
 
