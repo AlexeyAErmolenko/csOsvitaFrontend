@@ -111,6 +111,7 @@ header nav {
 
 .header_nav_menu_mob_cart {
     margin-right: 16px;
+    color: #a27b5c;
 }
 
 .mobile .header_nav_menu_mob_cart::before {
@@ -143,6 +144,7 @@ header nav {
 
 .header_nav_menu_mob_cart svg,
 .header_nav_menu_mob_menu svg {
+    display: block;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -251,7 +253,8 @@ h1 {
 }
 
 .filter_form input {
-    background: url("./images/icons/search.svg") no-repeat left 16px center;
+    background: url("./images/icons/svg/search.svg") no-repeat left 16px center;
+    background-size: 16px 16px;
     border: 1px solid #121212;
     padding: 16px;
     padding-left: 48px;
@@ -597,6 +600,9 @@ h1 {
 .button_with button[aria-label="Increase quantity"] {
     border: none;
     background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .menu_detail_right_buttons .button_with {
@@ -693,12 +699,6 @@ address {
     letter-spacing: 0.03em;
     text-align: center;
     color: #fff;
-}
-
-.footer_content .line {
-    width: 100%;
-    max-width: 1192px;
-    color: #e3e3e3;
 }
 
 address .bold {
@@ -826,9 +826,16 @@ nav[aria-label="links to download applications"] p {
         text-transform: capitalize;
     }
 
-    .header_nav_menu_item+img {
-        display: none;
-        background: #a27b5c;
+    .header_nav_menu .line {
+        display: block;
+        width: 20px;
+        height: 1px;
+        margin: 0 auto;
+        background-color: #ffffff00;
+    }
+
+    .header_nav_menu .active {
+        background-color: #a27b5c;
     }
 
     /*-----------------------------------------------------------------------------------------------------------------------------------------------*/

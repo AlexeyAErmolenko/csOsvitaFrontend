@@ -18,28 +18,28 @@
             <div class="header_nav_menu_and_buttons">
                 <ul class="desktop header_nav_menu">
                     <li>
-                        <div><a class="header_nav_menu_item" href="/Home/">Home</a><img src="./images/line.png"
-                                alt="simple line" width="20" height="1"></div>
+                        <a class="header_nav_menu_item" href="/Home/">Home</a>
+                        <div class="line"></div>
                     </li>
                     <li>
-                        <a class="header_nav_menu_item" href="/Story/">Story</a><img src="./images/line.png"
-                            alt="simple line" width="20" height="1">
+                        <a class="header_nav_menu_item" href="/Story/">Story</a>
+                        <div class="line"></div>
                     </li>
                     <li>
-                        <a class="header_nav_menu_item" href="/Menu/">Menu</a><img src="./images/line.png"
-                            alt="simple line" width="20" height="1">
+                        <a class="header_nav_menu_item" href="/Menu/">Menu</a>
+                        <div class="line active"></div>
                     </li>
                     <li>
-                        <a class="header_nav_menu_item" href="/Space/">Space</a><img src="./images/line.png"
-                            alt="simple line" width="20" height="1">
+                        <a class="header_nav_menu_item" href="/Space/">Space</a>
+                        <div class="line"></div>
                     </li>
                     <li>
-                        <a class="header_nav_menu_item" href="/Community/">Community</a><img src="./images/line.png"
-                            alt="simple line" width="20" height="1">
+                        <a class="header_nav_menu_item" href="/Community/">Community</a>
+                        <div class="line"></div>
                     </li>
                     <li>
-                        <a class="header_nav_menu_item" href="/News/">News</a><img src="./images/line.png"
-                            alt="simple line" width="20" height="1">
+                        <a class="header_nav_menu_item" href="/News/">News</a>
+                        <div class="line"></div>
                     </li>
                 </ul>
                 <div class="desktop">
@@ -49,20 +49,14 @@
                 </div>
                 <div class="mobile">
                     <button class="header_nav_menu_mob_cart" aria-label="Cart, contains x items">
-                        <img class="" srcset="./images/icons/regular/shopping-basket.png "
-                            src="./images/icons/regular/shopping-basket.png" alt="Simple brown shopping basket icon"
-                            width="20" height="20" />
-                        <!-- <svg width="20" height="20">
-                            <use href="./images/icons/regular/shopping-basket.svg"></use>                        
-                        </svg> -->
+                        <svg class="shopping-basket" width="20" height="20">
+                            <use href="./images/icons/svg/shopping-basket.svg#shopping-basket" />
+                        </svg>
                     </button>
                     <button class="header_nav_menu_mob_menu" aria-label="Mobile menu">
-                        <img class="" srcset="./images/icons/regular/menu-right.png "
-                            src="./images/icons/regular/menu-right.png" alt="Right-aligned hamburger menu icon"
-                            width="20" height="20" />
-                        <!-- <svg class="" width="20" height="20">
-                            <use href="./images/icons/regular/menu-right.svg"></use>
-                        </svg> -->
+                        <svg class="menu-right" width="20" height="20">
+                            <use href="./images/icons/svg/menu-right.svg#menu-right" />
+                        </svg>
                     </button>
                 </div>
             </div>
@@ -1115,15 +1109,15 @@
                     <nav class="menu_detail_right_bread_crumb" aria-label="bread crumb">
                         <a href="/">Home</a>
                         <div>
-                            <img src="./images/icons/regular/angle-right-small.png"
-                                alt="Small black right-pointing chevron icon" width="6" height="10"
-                                aria-hidden="true" />
+                            <svg class="angle-right-small" width="6" height="10">
+                                <use href="./images/icons/svg/angle-right-small.svg#angle-right-small" />
+                            </svg>
                         </div>
                         <a href="/menu">Menu</a>
                         <div>
-                            <img src="./images/icons/regular/angle-right-small.png"
-                                alt="Small black right-pointing chevron icon" width="6" height="10"
-                                aria-hidden="true" />
+                            <svg class="angle-right-small" width="6" height="10">
+                                <use href="./images/icons/svg/angle-right-small.svg#angle-right-small" />
+                            </svg>
                         </div>
                         <a href="/Details">Details</a>
                     </nav>
@@ -1155,13 +1149,15 @@
                         <button class="button_add_cart">Add to Cart</button>
                         <div class="button_with">
                             <button aria-label="Reduce quantity">
-                                <img src="./images/icons/regular/minus.svg" alt="decrease symbol" width="24"
-                                    height="24" />
+                                <svg class="minus" width="16" height="16">
+                                    <use href="./images/icons/svg/minus.svg#minus" />
+                                </svg>
                             </button>
                             <p>1</p>
                             <button aria-label="Increase quantity">
-                                <img src="./images/icons/regular/plus.svg" alt="increase symbol" width="24"
-                                    height="24" />
+                                <svg class="minus" width="16" height="16">
+                                    <use href="./images/icons/svg/plus.svg#plus" />
+                                </svg>
                             </button>
                         </div>
                         <button class="button_buy_it_now">buy it now</button>
@@ -1274,13 +1270,13 @@
                 </ul>
                 <div class="menu_List_paging">
                     <svg class="icon" width="16" height="16">
-                        <use href="/images/icons/regular/pading.svg#dot"></use>
+                        <use href="/images/icons/svg/pading.svg#dot" />
                     </svg>
                     <svg class="icon active" width="16" height="16">
-                        <use href="/images/icons/regular/pading.svg#dot"></use>
+                        <use href="/images/icons/svg/pading.svg#dot" />
                     </svg>
                     <svg class="icon" width="16" height="16">
-                        <use href="/images/icons/regular/pading.svg#dot"></use>
+                        <use href="/images/icons/svg/pading.svg#dot" />
                     </svg>
                 </div>
             </section>
@@ -1297,26 +1293,50 @@
             <div class="line"></div>
             <div class="social_media">
                 <nav aria-label="Social networks">
-                    <a href="/spotify.com"><img src="./images/icons/spotify-min.png" alt="spotify" width="24"
-                            height="24"></a>
-                    <a href="/instagram.com"><img src="./images/icons/instagram-min.png" alt="instagram" width="24"
-                            height="24"></a>
-                    <a href="/tiktok.com"><img src="./images/icons/tiktok-min.png" alt="tiktok" width="24"
-                            height="24"></a>
-                    <a href="/youtube.com"><img src="./images/icons/youtube-min.png" alt="youtube" width="24"
-                            height="24"></a>
-                    <a href="/twitter.com"><img src="./images/icons/twitter-min.png" alt="twitter" width="24"
-                            height="24"></a>
-                    <a href="/telegram.com"><img src="./images/icons/telegram-min.png" alt="telegram" width="24"
-                            height="24"></a>
+                    <a href="/spotify.com">
+                        <svg class="spotify" width="24" height="24">
+                            <use href="./images/icons/svg/spotify.svg#spotify" />
+                        </svg>
+                    </a>
+                    <a href="/instagram.com">
+                        <svg class="instagram" width="24" height="24">
+                            <use href="./images/icons/svg/instagram.svg#instagram" />
+                        </svg>
+                    </a>
+                    <a href="/tiktok.com">
+                        <svg class="tiktok" width="24" height="24">
+                            <use href="./images/icons/svg/tiktok.svg#tiktok" />
+                        </svg>
+                    </a>
+                    <a href="/youtube.com">
+                        <svg class="youtube" width="24" height="24">
+                            <use href="./images/icons/svg/youtube.svg#youtube" />
+                        </svg>
+                    </a>
+                    <a href="/twitter.com">
+                        <svg class="twitter" width="24" height="24">
+                            <use href="./images/icons/svg/twitter.svg#twitter" />
+                        </svg>
+                    </a>
+                    <a href="/telegram.com">
+                        <svg class="telegram" width="24" height="24">
+                            <use href="./images/icons/svg/telegram.svg#telegram" />
+                        </svg>
+                    </a>
                 </nav>
                 <nav aria-label="links to download applications">
                     <p>Delivery Order</p>
                     <div class="links_download_applications">
-                        <a href="/appStore.com"><img src="./images/icons/app-store-min.png" alt="logo app store"
-                                width="134" height="40"></a>
-                        <a href="/googlePlay.com"><img src="./images/icons/google-play-min.png" alt="logo google play"
-                                width="134" height="40"></a>
+                        <a href="/appStore.com">
+                            <svg class="app-store" width="134" height="40">
+                                <use href="./images/icons/svg/app-store.svg#app-store" />
+                            </svg>
+                        </a>
+                        <a href="/googlePlay.com">
+                            <svg class="google-play" width="134" height="40">
+                                <use href="./images/icons/svg/google-play.svg#google-play" />
+                            </svg>
+                        </a>
                     </div>
                 </nav>
             </div>
